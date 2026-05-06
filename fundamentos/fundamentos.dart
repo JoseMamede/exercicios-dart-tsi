@@ -28,9 +28,23 @@ void main() {
 
     // Questão 7
     double valorCompra = 100.0;
-    // Aplica 10% de desconto usando operadores aritméticos
     double valorFinal = valorCompra - (valorCompra * 0.10);
     print('Valor original: $valorCompra | Com 10% de desconto: $valorFinal');
 
+    // Questão 8
+    String produto = "rtx 5060";
+    double preco = 2.279;
+    print('O produto $produto custa R\$ $preco');
+
+    // Questão 9
+    List<String> cidades = ['Jales', 'ilia topuria', 'Khabib Nurmagomedov'];
+    print('O segundo nome da lista é: ${cidades[1]}');
+
+    // Questão 10
+    Set<int> numerosSet = {1, 2, 3, 2};
+  
+    // O método .length retorna a quantidade de itens no conjunto
+    print('Elementos únicos no Set: ${numerosSet.length}');
+    print('Conteúdo do Set: $numerosSet');
 
 }
