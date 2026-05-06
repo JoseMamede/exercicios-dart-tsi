@@ -42,9 +42,37 @@ void main() {
 
     // Questão 10
     Set<int> numerosSet = {1, 2, 3, 2};
-  
-    // O método .length retorna a quantidade de itens no conjunto
     print('Elementos únicos no Set: ${numerosSet.length}');
     print('Conteúdo do Set: $numerosSet');
 
+    // Questão 11
+    Map<String, double> frutas = {
+        'Maçã': 5.50,
+        'Banana': 3.75,
+        'Manga': 8.00
+     };
+
+    String frutaDesejada = 'Banana';
+    print('Questão 11 - O preço da $frutaDesejada é: R\$ ${frutas[frutaDesejada]}');
+
+    // Questão 12
+    dynamic variavelDinamica = 10; 
+    print('Questão 12 - Valor inicial (int): $variavelDinamica');
+
+    variavelDinamica = "Agora sou uma String"; 
+    print('Questão 12 - Valor alterado (String): $variavelDinamica');
+
+    // Questão 13
+    int idadeUsuario = 20;
+    String resultado = idadeUsuario >= 18 ? "Maior de idade" : "Menor de idade";
+    print('Questão 13 - A pessoa é: $resultado');
+
+    // Questão 14
+    String? nomeUsuario; 
+    String nomeExibicao = nomeUsuario ?? "Visitante";
+    print('Questão 14 - Bem-vindo, $nomeExibicao!');
+
+    // Questão 15
+    final double piValue = 3.1415;
+    print('Questão 15 - Valor de PI: $piValue');
 }
